@@ -9,6 +9,15 @@ To add two points:
 
 Results are the new x and y coordinates
 
+To add two scalars:
+
+    $ ecctools sadd <k1> <k2>
+
+To multiply two scalars:
+
+    $ ecctools smult <k1> <k2>
+
+
 To multiply a scalar with a point on the curve:
 
     $ ecctools mult <k> <x> <y>
