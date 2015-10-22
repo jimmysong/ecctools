@@ -32,5 +32,8 @@ To multiply a scalar to the generator point G:
     $ ecctools multg 10
     e60fce93b59e9ec53011aabc21c23e97b2a31369b87a5ae9c44ee89e2a6dec0a f7e3507399e595929db99f34f57937101296891e44d23f0be1f32cce69616821
 
+To calculate the sha256 of data in hex:
+
+    $ ecctools sha256 <data in hex>
 
 Note all numbers on the command line should be in hex.

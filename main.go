@@ -1,6 +1,7 @@
 package main
 
 import (
+	"crypto/sha256"
 	"encoding/hex"
 	"fmt"
 	"math/big"
@@ -49,5 +50,8 @@ func main() {
 		k := fromHex(os.Args[2]).Bytes()
 		rx, ry := secp256k1.ScalarBaseMult(k)
 		fmt.Printf("%v %v\n", toHex(rx), toHex(ry))
+	} else if operation == "sha256" {
+		s := fromHex(os.Args[2]).Bytes()
+		fmt.Printf("%x\n", sha256.Sum256(s))
 	}
 }
