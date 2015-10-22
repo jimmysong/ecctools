@@ -12,7 +12,7 @@ import (
 func fromHex(s string) *big.Int {
 	r, ok := new(big.Int).SetString(s, 16)
 	if !ok {
-		panic("invalid hex in source file: " + s)
+		panic("invalid hex: " + s)
 	}
 	return r
 }
