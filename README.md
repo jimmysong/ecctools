@@ -18,9 +18,9 @@ To multiply a scalar with a point on the curve:
 
 To multiply a scalar to the generator point G:
 
-    $ ecctools mult <k>
+    $ ecctools multg <k>
 
-    $ ecctools mult 10
+    $ ecctools multg 10
     e60fce93b59e9ec53011aabc21c23e97b2a31369b87a5ae9c44ee89e2a6dec0a f7e3507399e595929db99f34f57937101296891e44d23f0be1f32cce69616821
 
 
